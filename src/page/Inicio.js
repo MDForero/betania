@@ -7,7 +7,7 @@ const Inicio = () => {
   return (
     <>
       <main className='relative' >
-        <video poster={poster}  loop muted>
+        <video poster={poster} autoPlay loop muted>
           <source src={video}/>
         </video>
   
