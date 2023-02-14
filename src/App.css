@@ -1,38 +1,79 @@
-.App {
+body{
+  background-color: beige;
+}
+
+h1 , h2 , h3, h4, h5, h6 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.transparent{
+  background-color: #cff5fe;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar a{
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.relative{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+}
+.div-center{
+  position: absolute;
+  align-self: center;
+}
+.div-bottom{
+  position: absolute;
+  align-self: flex-end;
+}
+.white{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.w-800{
+  max-width: 800px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main{
+  height: 100vh;
+}
+
+main video {
+  width: 100%;
+  object-fit: cover;
+}
+
+.flex-wrap-around{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-contact{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: greenyellow;
+  border: solid 2px;
+  border-radius: 10px;
+}
+.card-contact a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#contacto{
+  background: url("assets/contacto.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 100vh;
+
 }
